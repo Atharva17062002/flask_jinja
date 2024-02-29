@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Jinja test</title>
+    </head>
+
+    <body>
+        <h1>Login</h1>
+        <p style="color: red;">
+            {% if error %}
+            {{ error }}
+            {% endif %}
+        </p>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+        <p style="color: rgb(0, 31, 59);">
+            {{code}}
+        </p>
+
+        <a href="/register">Register</a>
+
+
+    </body>
+</html>
